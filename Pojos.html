@@ -3,91 +3,383 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pojo's Attractions</title>
+  <title>Mobile Responsive Page</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-100 min-h-screen">
-
-  <!-- Header -->
+<body class="bg-white">
+  <!-- Responsive Header -->
   <header class="fixed top-0 inset-x-0 z-50 bg-indigo-600 text-white">
     <div class="container mx-auto flex items-center justify-between p-4">
+      <!-- Logo -->
       <a href="#" class="flex items-center">
         <img class="h-10 w-auto" src="https://i.imghippo.com/files/fatL8493QnE.png" alt="Logo">
       </a>
-      <button id="menu-toggle" class="lg:hidden p-2 rounded-md text-gray-200 hover:text-gray-300">
-        <span class="sr-only">Open menu</span>
-        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-16 6h16"></path>
-        </svg>
-      </button>
+      <!-- Hamburger Menu for Mobile -->
+      <div class="lg:hidden">
+        <button id="menu-toggle" class="rounded-md p-2 text-gray-200 hover:text-gray-300">
+          <span class="sr-only">Open menu</span>
+          <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+        </button>
+      </div>
+      <!-- Navigation Links (Hidden on Mobile) -->
       <nav class="hidden lg:flex space-x-8">
-        <a href="#" class="text-sm hover:text-gray-200">Product</a>
-        <a href="#" class="text-sm hover:text-gray-200">Features</a>
-        <a href="#" class="text-sm hover:text-gray-200">Marketplace</a>
-        <a href="#" class="text-sm hover:text-gray-200">Company</a>
+        <a href="#" class="text-sm font-medium hover:text-gray-200">Product</a>
+        <a href="#" class="text-sm font-medium hover:text-gray-200">Features</a>
+        <a href="#" class="text-sm font-medium hover:text-gray-200">Marketplace</a>
+        <a href="#" class="text-sm font-medium hover:text-gray-200">Company</a>
       </nav>
     </div>
-    <div id="mobile-menu" class="hidden bg-indigo-700 lg:hidden">
-      <nav class="p-4 space-y-4">
-        <a href="#" class="block text-sm text-white hover:bg-indigo-600 px-4 py-2 rounded-md">Product</a>
-        <a href="#" class="block text-sm text-white hover:bg-indigo-600 px-4 py-2 rounded-md">Features</a>
-        <a href="#" class="block text-sm text-white hover:bg-indigo-600 px-4 py-2 rounded-md">Marketplace</a>
-        <a href="#" class="block text-sm text-white hover:bg-indigo-600 px-4 py-2 rounded-md">Company</a>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden lg:hidden bg-indigo-700">
+      <nav class="space-y-2 p-4">
+        <a href="#" class="block text-sm font-medium text-white hover:bg-indigo-600 rounded-md px-4 py-2">Product</a>
+        <a href="#" class="block text-sm font-medium text-white hover:bg-indigo-600 rounded-md px-4 py-2">Features</a>
+        <a href="#" class="block text-sm font-medium text-white hover:bg-indigo-600 rounded-md px-4 py-2">Marketplace</a>
+        <a href="#" class="block text-sm font-medium text-white hover:bg-indigo-600 rounded-md px-4 py-2">Company</a>
       </nav>
     </div>
   </header>
 
   <!-- Hero Section -->
-  <section class="relative px-6 pt-20 lg:px-8">
+  <div class="relative px-6 pt-20 lg:px-8">
     <div class="mx-auto max-w-2xl text-center">
+      <!-- Image -->
       <img class="mx-auto h-48 w-auto" src="https://i.imghippo.com/files/DYKh6988k.png" alt="Main Photo">
+      <!-- Heading -->
       <h1 class="mt-6 text-3xl font-bold text-gray-900 sm:text-5xl">Family Owned Est. 1974</h1>
+      <!-- Button -->
       <div class="mt-6">
         <a href="#" class="rounded-md bg-indigo-600 px-6 py-3 text-lg font-semibold text-white hover:bg-indigo-700">
           Our Attractions
         </a>
       </div>
     </div>
-  </section>
+  </div>
 
-  <!-- Attractions Section -->
-  <section class="mt-16">
-    <div class="mx-auto max-w-7xl px-6 lg:px-8">
-      <div class="mx-auto max-w-2xl text-center">
-        <h2 class="text-4xl font-semibold text-gray-900 sm:text-5xl">Attractions</h2>
-        <p class="mt-4 text-lg text-gray-700">
-          Welcome to Pojo's Family Fun Center, where we bring joy, laughter, and excitement to every visit.
-        </p>
-      </div>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
-        <a href="#" class="group bg-white rounded-lg shadow-md hover:shadow-lg transition">
-          <img src="https://static.wixstatic.com/media/2530f8_4318e47005ae452ea13b347a3668eb74~mv2.jpg" alt="Indoor Carousel" class="rounded-t-lg">
-          <div class="p-4">
-            <h3 class="text-lg font-bold text-gray-800 group-hover:text-indigo-600">Indoor Carousel</h3>
-            <p class="text-gray-600 mt-2">Experience Idaho's only indoor carousel!</p>
-          </div>
+ <div class="bg-white">
+  <!-- Header -->
+  <header class="absolute inset-x-0 top-0 z-50">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
+      <div class="flex lg:flex-1">
+        <a href="#" class="-m-1.5 p-1.5">
+          <span class="sr-only">Your Company</span>
+          <img class="h-8 w-auto" src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=600" alt="">
         </a>
-        <!-- More attractions here -->
+      </div>
+      <div class="flex lg:hidden">
+        <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+          <span class="sr-only">Open main menu</span>
+          <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+        </button>
+      </div>
+      <div class="hidden lg:flex lg:gap-x-12">
+     
+    </nav>
+    <!-- Mobile menu, show/hide based on menu open state. -->
+    <div class="lg:hidden" role="dialog" aria-modal="true">
+      <!-- Background backdrop, show/hide based on slide-over state. -->
+      <div class="fixed inset-0 z-50"></div>
+      <div class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+        <div class="flex items-center justify-between">
+          <a href="#" class="-m-1.5 p-1.5">
+            <span class="sr-only">Your Company</span>
+            <img class="h-8 w-auto" src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=600" alt="">
+          </a>
+          <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
+            <span class="sr-only">Close menu</span>
+            <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+        <div class="mt-6 flow-root">
+          <div class="-my-6 divide-y divide-gray-500/10">
+            <div class="space-y-2 py-6">
+              <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Product</a>
+              <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Features</a>
+              <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Resources</a>
+              <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Company</a>
+            </div>
+            <div class="py-6">
+              <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Log in</a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </section>
+  </header>
 
-  <!-- Footer -->
-  <footer class="bg-indigo-600 text-white mt-16">
-    <div class="mx-auto max-w-7xl px-6 py-12">
-      <div class="text-center">
-        <p class="text-sm">&copy; 2024 Pojo's, Inc. All rights reserved.</p>
+  <main class="isolate">
+    <!-- Hero section -->
+    <div class="relative isolate -z-10">
+      <svg class="absolute inset-x-0 top-0 -z-10 h-[64rem] w-full stroke-gray-200 [mask-image:radial-gradient(32rem_32rem_at_center,white,transparent)]" aria-hidden="true">
+        <defs>
+          <pattern id="1f932ae7-37de-4c0a-a8b0-a6e3b4d44b84" width="200" height="200" x="50%" y="-1" patternUnits="userSpaceOnUse">
+            <path d="M.5 200V.5H200" fill="none" />
+          </pattern>
+        </defs>
+        <svg x="50%" y="-1" class="overflow-visible fill-gray-50">
+          <path d="M-200 0h201v201h-201Z M600 0h201v201h-201Z M-400 600h201v201h-201Z M200 800h201v201h-201Z" stroke-width="0" />
+        </svg>
+        <rect width="100%" height="100%" stroke-width="0" fill="url(#1f932ae7-37de-4c0a-a8b0-a6e3b4d44b84)" />
+      </svg>
+      <div class="absolute left-1/2 right-0 top-0 -z-10 -ml-24 transform-gpu overflow-hidden blur-3xl lg:ml-24 xl:ml-48" aria-hidden="true">
+        <div class="aspect-[801/1036] w-[50.0625rem] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30" style="clip-path: polygon(63.1% 29.5%, 100% 17.1%, 76.6% 3%, 48.4% 0%, 44.6% 4.7%, 54.5% 25.3%, 59.8% 49%, 55.2% 57.8%, 44.4% 57.2%, 27.8% 47.9%, 35.1% 81.5%, 0% 97.7%, 39.2% 100%, 35.2% 81.4%, 97.2% 52.8%, 63.1% 29.5%)"></div>
+      </div>
+      <div class="overflow-hidden">
+        <div class="mx-auto max-w-7xl px-6 pb-32 pt-36 sm:pt-60 lg:px-8 lg:pt-32">
+          <div class="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
+            <div class="relative w-full lg:max-w-xl lg:shrink-0 xl:max-w-2xl">
+              <h1 class="text-pretty text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl">We are creating life-long memories</h1>
+              <p class="mt-8 text-pretty text-lg font-medium text-gray-500 sm:max-w-md sm:text-xl/8 lg:max-w-none">Our goal is to create happy, lifelong memories for every family that visits. Since 1988, Pojo's Family Fun Center has been a cherished destination in Boise, offering a safe and entertaining environment for families to connect and have fun. Built on a foundation of joy and excitement, we are proud to be a community hub where unforgettable memories are made.</p>
+            </div>
+            <div class="mt-14 flex justify-end gap-8 sm:-mt-44 sm:justify-start sm:pl-20 lg:mt-0 lg:pl-0">
+              <div class="ml-auto w-44 flex-none space-y-8 pt-32 sm:ml-0 sm:pt-80 lg:order-last lg:pt-36 xl:order-none xl:pt-80">
+                <div class="relative">
+                  <img src="https://tse1.mm.bing.net/th?id=OIP.h3fCOX6rdYTZ16oI5_5e_AHaE-&pid=Api&adlt=" alt="" class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg">
+                  <div class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10"></div>
+                </div>
+              </div>
+              <div class="mr-auto w-44 flex-none space-y-8 sm:mr-0 sm:pt-52 lg:pt-36">
+                <div class="relative">
+                  <https://tse2.mm.bing.net/th?id=OIP.uxGY8sTLGipbKrmJq5hoTAHaFj&pid=Api&adlt=strict" alt="" class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg">
+                  <div class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10"></div>
+                </div>
+                <div class="relative">
+                  <img src="https://static.wixstatic.com/media/2530f8_c314a135e4074c9b99dcf193d3237a4e~mv2.jpeg/v1/fill/w_434,h_579,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/2530f8_c314a135e4074c9b99dcf193d3237a4e~mv2.jpeg" alt="" class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg">
+                  <div class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10"></div>
+                </div>
+              </div>
+              <div class="w-44 flex-none space-y-8 pt-32 sm:pt-0">
+                <div class="relative">
+                  <img src="https://tse2.mm.bing.net/th?id=OIP.uxGY8sTLGipbKrmJq5hoTAHaFj&pid=Api&adlt=strict" alt="" class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg">
+                  <div class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10"></div>
+                </div>
+                <div class="relative">
+                  <img src="https://tse3.mm.bing.net/th?id=OIP.3rMdeJy5edo4E-6VgcYEKAHaFV&pid=Api&adlt=strict" alt="" class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg">
+                  <div class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </footer>
 
-  <script>
-    const menuToggle = document.getElementById('menu-toggle');
-    const mobileMenu = document.getElementById('mobile-menu');
+   
+    <!-- Image section -->
+    <div class="mt-32 sm:mt-40 xl:mx-auto xl:max-w-7xl xl:px-8">
+      <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2832&q=80" alt="" class="aspect-[5/2] w-full object-cover xl:rounded-3xl">
+ 
+   <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pojo's Attractions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen">
+    <!-- Attractions Section -->
+    <div class="mx-auto mt-36 max-w-7xl px-10 sm:mt-44 lg:px-12">
+        <div class="mx-auto max-w-2xl lg:mx-0 pl-20">
+            <h2 class="text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">Attractions</h2>
+            <p class="mt-8 text-lg text-gray-700 leading-relaxed">
+                Welcome to Pojo's Family Fun Center, where we bring joy, laughter, and excitement to every visit. From thrilling rides to engaging arcade games, there’s something for everyone to enjoy. Gather your loved ones and make unforgettable memories at Pojo's—a place that feels just like home.
+            </p>
+        </div>
+    </div>
 
-    menuToggle.addEventListener('click', () => {
-      mobileMenu.classList.toggle('hidden');
-    });
-  </script>
+<div class="mb-12">
+    <!-- Content with margin-bottom -->
+</div>
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pojo's Attractions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <div class="container mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Indoor Carousel -->
+        <a href="/carousel" class="group bg-white rounded-lg shadow-lg overflow-hidden transition hover:bg-gray-200">
+            <div class="p-4">
+                <h2 class="text-xl font-bold text-gray-800 group-hover:text-gray-700">Indoor Carousel</h2>
+                <p class="text-gray-600 group-hover:text-gray-500 mt-2">As Idaho's only indoor carousel, it features handpicked animals representing local wildlife, such as bobcats and whitetail deer.</p>
+            </div>
+            <img src="https://static.wixstatic.com/media/2530f8_4318e47005ae452ea13b347a3668eb74~mv2.jpg/v1/crop/x_244,y_226,w_2362,h_1365/fill/w_1355,h_780,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG_4059%2520(1)_edited.jpg" alt="Indoor Carousel" class="w-full h-48 object-cover">
+        </a>
+
+        <!-- Bumper Cars -->
+        <a href="/bumper-cars" class="group bg-white rounded-lg shadow-lg overflow-hidden transition hover:bg-gray-200">
+            <div class="p-4">
+                <h2 class="text-xl font-bold text-gray-800 group-hover:text-gray-700">Bumper Cars</h2>
+                <p class="text-gray-600 group-hover:text-gray-500 mt-2">Engage in friendly competition with family and friends on the indoor bumper car arena, a popular attraction since 1994.</p>
+            </div>
+            <img src="https://th.bing.com/th/id/OIP.0Pm2i1ToSHymZplflnghiwHaEK?w=310&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="Bumper Cars" class="w-full h-48 object-cover">
+        </a>
+
+        <!-- Arcade Games -->
+        <a href="/arcade-games" class="group bg-white rounded-lg shadow-lg overflow-hidden transition hover:bg-gray-200">
+            <div class="p-4">
+                <h2 class="text-xl font-bold text-gray-800 group-hover:text-gray-700">Arcade Games</h2>
+                <p class="text-gray-600 group-hover:text-gray-500 mt-2">The expansive arcade offers a mix of classic and modern games, including driving simulators and redemption games.</p>
+            </div>
+            <img src="https://th.bing.com/th/id/R.2f61c6543794631cdd80d1f676ddd35f?rik=TIbXl8kEbxt1aA&pid=ImgRaw&r=0" alt="Arcade Games" class="w-full h-48 object-cover">
+        </a>
+
+        <!-- Soft Play Area -->
+        <a href="/soft-play" class="group bg-white rounded-lg shadow-lg overflow-hidden transition hover:bg-gray-200">
+            <div class="p-4">
+                <h2 class="text-xl font-bold text-gray-800 group-hover:text-gray-700">Soft Play Area</h2>
+                <p class="text-gray-600 group-hover:text-gray-500 mt-2">Designed for younger children, this area provides a safe and colorful environment with age-appropriate activities.</p>
+            </div>
+            <img src="https://th.bing.com/th/id/OIP.uxGY8sTLGipbKrmJq5hoTAHaFj?rs=1&pid=ImgDetMain" alt="Soft Play Area" class="w-full h-48 object-cover">
+        </a>
+
+        <!-- Carousel Café -->
+        <a href="/carousel-cafe" class="group bg-white rounded-lg shadow-lg overflow-hidden transition hover:bg-gray-200">
+            <div class="p-4">
+                <h2 class="text-xl font-bold text-gray-800 group-hover:text-gray-700">Carousel Café</h2>
+                <p class="text-gray-600 group-hover:text-gray-500 mt-2">The on-site café serves a variety of delicious foods. including pizza, burgers, sandwiches, and kid-friendly meals.</p>
+            </div>
+            <img src="https://static.wixstatic.com/media/2530f8_6a7d4d83fca94ac6a5d8e8a69634566b.jpg/v1/fill/w_636,h_477,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/2530f8_6a7d4d83fca94ac6a5d8e8a69634566b.jpg" alt="Carousel Café" class="w-full h-48 object-cover">
+        </a>
+
+        <!-- Birthday Party Packages -->
+        <a href="/birthday-packages" class="group bg-white rounded-lg shadow-lg overflow-hidden transition hover:bg-gray-200">
+            <div class="p-4">
+                <h2 class="text-xl font-bold text-gray-800 group-hover:text-gray-700">Birthday Party Packages</h2>
+                <p class="text-gray-600 group-hover:text-gray-500 mt-2">Pojo's offers customizable packages for birthdays and other events, including reserved seating, food, and game tokens.</p>
+            </div>
+            <img src="https://th.bing.com/th/id/R.1de0b3c250945bcb005c806eaebcfc23?rik=kKxsfGXaIp33KA&riu=http%3a%2f%2f2.bp.blogspot.com%2f-aCwnzN4Epk4%2fUZ9IjXGWk9I%2fAAAAAAAAAO0%2fVIaokMoH1uw%2fs1600%2fhappy_birthday_cake_with_candles-1920x1200.jpg&ehk=q6M2dU%2bO6tg1il%2bXzAEq9w2YWHT2erATpPEiF96KtdQ%3d&risl=&pid=ImgRaw&r=0" alt="Birthday Party Packages" class="w-full h-48 object-cover">
+        </a>
+    </div>
 </body>
 </html>
+
+    <!-- Logo cloud -->
+    <div class="relative isolate -z-10 mt-32 sm:mt-48">
+      <div class="absolute inset-x-0 top-1/2 -z-10 flex -translate-y-1/2 justify-center overflow-hidden [mask-image:radial-gradient(50%_45%_at_50%_55%,white,transparent)]">
+        <svg class="h-[40rem] w-[80rem] flex-none stroke-gray-200" aria-hidden="true">
+          <defs>
+            <pattern id="e9033f3e-f665-41a6-84ef-756f6778e6fe" width="200" height="200" x="50%" y="50%" patternUnits="userSpaceOnUse" patternTransform="translate(-100 0)">
+              <path d="M.5 200V.5H200" fill="none" />
+            </pattern>
+          </defs>
+          <svg x="50%" y="50%" class="overflow-visible fill-gray-50">
+            <path d="M-300 0h201v201h-201Z M300 200h201v201h-201Z" stroke-width="0" />
+          </svg>
+          <rect width="100%" height="100%" stroke-width="0" fill="url(#e9033f3e-f665-41a6-84ef-756f6778e6fe)" />
+        </svg>
+      </div>
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <h2 class="text-center text-lg/8 font-semibold text-gray-900">Beyond compare to</h2>
+        <div class="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
+          <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="https://th.bing.com/th/id/OIP.pX6LH5Tr6ofmfhwZ_YMFNQHaHa?rs=1&pid=ImgDetMain" alt="Transistor" width="158" height="48">
+          <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="https://th.bing.com/th/id/OIP.Gp3BgYi2_UZc-Fp_vmgPbgHaEh?w=294&h=180&c=7&r=0&o=5&pid=1.7" alt="Reform" width="158" height="48">
+          <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="https://th.bing.com/th/id/OIP.ICiQU7vhOZ3UxbDOg9zrbgHaDr?w=334&h=173&c=7&r=0&o=5&pid=1.7" alt="Tuple" width="158" height="48">
+          <img class="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1" src="https://th.bing.com/th?id=OIP.JF3WO2YB89X-16zJV96kfgHaA3&w=439&h=51&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="SavvyCal" width="158" height="48">
+          <img class="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1" src="https://th.bing.com/th/id/OIP.tF5M8-NyVmlp7FqZNI7u3wHaDa?w=330&h=161&c=7&r=0&o=5&pid=1.7" alt="Statamic" width="158" height="48">
+        </div>
+      </div>
+    </div>
+
+   
+    <!-- Blog section -->
+    <div class="mx-auto mt-32 max-w-7xl px-6 sm:mt-40 lg:px-8">
+      <div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-none">
+        <h2 class="text-balance text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">From the blog</h2>
+        <p class="mt-2 text-lg/8 text-gray-600">Learn how to grow your business with our expert advice.</p>
+      </div>
+      <div class="mx-auto mt-16 grid max-w-2xl auto-rows-fr grid-cols-1 gap-8 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+        <article class="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl bg-gray-900 px-8 pb-8 pt-80 sm:pt-48 lg:pt-80">
+          <img src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80" alt="" class="absolute inset-0 -z-10 size-full object-cover">
+          <div class="absolute inset-0 -z-10 bg-gradient-to-t from-gray-900 via-gray-900/40"></div>
+          <div class="absolute inset-0 -z-10 rounded-2xl ring-1 ring-inset ring-gray-900/10"></div>
+
+
+
+          <div class="flex flex-wrap items-center gap-y-1 overflow-hidden text-sm/6 text-gray-300">
+            <time datetime="2020-03-16" class="mr-8">Mar 16, 2020</time>
+            <div class="-ml-4 flex items-center gap-x-4">
+              <svg viewBox="0 0 2 2" class="-ml-0.5 size-0.5 flex-none fill-white/50">
+                <circle cx="1" cy="1" r="1" />
+              </svg>
+              <div class="flex gap-x-2.5">
+                <img src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" class="size-6 flex-none rounded-full bg-white/10">
+                Michael Foster
+              </div>
+            </div>
+          </div>
+          <h3 class="mt-3 text-lg/6 font-semibold text-white">
+            <a href="#">
+              <span class="absolute inset-0"></span>
+              Vel expedita assumenda placeat aut nisi optio voluptates quas
+            </a>
+          </h3>
+        </article>
+
+
+ 
+
+        <!-- More posts... -->
+      </div>
+    </div>
+  </main>
+   <div class="my-4"></div>
+
+
+
+<div class="bg-gray-200 px-6 py-24 sm:py-32 lg:px-8">
+  <div class="mx-auto max-w-2xl text-center">
+    <h2 class="text-5xl font-semibold tracking-tight text-gray sm:text-7xl">
+      Support Center
+    </h2>
+    <p class="mt-8 text-lg font-medium text-gr-400 sm:text-xl/8">
+      We’re here to help! Whether you need answers, guidance, or support, our team is dedicated to ensuring your experience is seamless and satisfying. Reach out with confidence, and let us assist you in any way we can.
+    </p>
+    <div class="mt-10">
+      <a href="#"
+         class="bg-indigo-600 hover:bg-yellow-300 text-white font-semibold text-lg px-6 py-3 rounded-lg shadow-md transition">
+        Get Support
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="mt-0 bg-indigo-600 text-white">
+  <div class="mx-auto max-w-7xl overflow-hidden px-6 py-20 sm:py-24 lg:px-8">
+    <nav class="-mb-6 flex flex-wrap justify-center gap-x-12 gap-y-3 text-sm/6" aria-label="Footer">
+      <a href="#" class="text-gray-200 hover:text-gray-50">About</a>
+      <a href="#" class="text-gray-200 hover:text-gray-50">Blog</a>
+      <a href="#" class="text-gray-200 hover:text-gray-50">Jobs</a>
+      <a href="#" class="text-gray-200 hover:text-gray-50">Press</a>
+      <a href="#" class="text-gray-200 hover:text-gray-50">Accessibility</a>
+      <a href="#" class="text-gray-200 hover:text-gray-50">Partners</a>
+    </nav>
+    <div class="mt-16 flex justify-center gap-x-10">
+      <a href="#" class="text-gray-200 hover:text-gray-50">
+        <span class="sr-only">Facebook</span>
+        <svg class="size-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" />
+        </svg>
+      </a>
+      <a href="#" class="text-gray-200 hover:text-gray-50">
+        <span class="sr-only">Instagram</span>
+        <svg class="size-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd" />
+        </svg>
+      </a>
+    </div>
+    <p class="mt-10 text-center text-sm/6 text-gray-200">&copy; 2024 Pojo's, Inc. All rights reserved.</p>
+  </div>
+</footer>
