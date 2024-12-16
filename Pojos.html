@@ -207,27 +207,35 @@
       <a href="#" class="text-gray-200 hover:text-gray-50">Accessibility</a>
       <a href="#" class="text-gray-200 hover:text-gray-50">Partners</a>
     </nav>
-    <!-- Social media icons -->
-    <div class="mt-10 flex justify-center gap-x-10">
-      <!-- Facebook Icon -->
-      <a href="#" class="text-gray-200 hover:text-gray-50">
-        <span class="sr-only">Facebook</span>
-        <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-          <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54v-2.89h2.54V9.797c0-2.507 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.631.771-1.631 1.562V12h2.774l-.444 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/>
-        </svg>
-      </a>
-      <!-- Instagram Icon -->
-      <a href="#" class="text-gray-200 hover:text-gray-50">
-        <span class="sr-only">Instagram</span>
-        <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-          <path d="M7.75 2h8.5A5.75 5.75 0 0122 7.75v8.5A5.75 5.75 0 0116.25 22h-8.5A5.75 5.75 0 012 16.25v-8.5A5.75 5.75 0 017.75 2zm0 1.5A4.25 4.25 0 003.5 7.75v8.5a4.25 4.25 0 004.25 4.25h8.5a4.25 4.25 0 004.25-4.25v-8.5a4.25 4.25 0 00-4.25-4.25h-8.5zM12 7a5 5 0 110 10 5 5 0 010-10zm0 1.5a3.5 3.5 0 100 7 3.5 3.5 0 000-7zm5-2.75a1.25 1.25 0 112.5 0 1.25 1.25 0 01-2.5 0z"/>
-        </svg>
-      </a>
+    <!-- Social media icons and Footer Image -->
+    <div class="mt-10 flex items-center justify-center gap-x-6">
+      <!-- Footer Image on Mobile -->
+      <div class="flex-shrink-0">
+        <img src="https://i.imghippo.com/files/UlPs4320rwc.png" alt="Footer Image" class="hidden sm:block object-contain w-24 sm:w-32 md:w-48 lg:w-[22.5rem] h-auto">
+        <!-- The image is hidden on mobile (smaller than 'sm' breakpoint) and shown on larger screens -->
+      </div>
+      <!-- Social media icons -->
+      <div class="flex gap-x-6">
+        <!-- Facebook Icon -->
+        <a href="#" class="text-gray-200 hover:text-gray-50">
+          <span class="sr-only">Facebook</span>
+          <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54v-2.89h2.54V9.797c0-2.507 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.631.771-1.631 1.562V12h2.774l-.444 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/>
+          </svg>
+        </a>
+        <!-- Instagram Icon -->
+        <a href="#" class="text-gray-200 hover:text-gray-50">
+          <span class="sr-only">Instagram</span>
+          <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M7.75 2h8.5A5.75 5.75 0 0122 7.75v8.5A5.75 5.75 0 0116.25 22h-8.5A5.75 5.75 0 012 16.25v-8.5A5.75 5.75 0 017.75 2zm0 1.5A4.25 4.25 0 003.5 7.75v8.5a4.25 4.25 0 004.25 4.25h8.5a4.25 4.25 0 004.25-4.25v-8.5a4.25 4.25 0 00-4.25-4.25h-8.5zM12 7a5 5 0 110 10 5 5 0 010-10zm0 1.5a3.5 3.5 0 100 7 3.5 3.5 0 000-7zm5-2.75a1.25 1.25 0 112.5 0 1.25 1.25 0 01-2.5 0z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+    <!-- Footer Image on Mobile -->
+    <div class="mt-6 flex justify-center sm:hidden">
+      <img src="https://i.imghippo.com/files/UlPs4320rwc.png" alt="Footer Image" class="object-contain w-24 h-auto">
     </div>
     <p class="mt-10 text-center text-sm text-gray-200">&copy; 2024 Pojo's, Inc. All rights reserved.</p>
-  </div>
-  <!-- Footer Image -->
-  <div class="absolute bottom-0 left-0 mb-4 ml-4">
-    <img src="https://i.imghippo.com/files/UlPs4320rwc.png" alt="Footer Image" class="object-contain w-24 sm:w-32 md:w-48 lg:w-90 h-auto">
   </div>
 </footer>
