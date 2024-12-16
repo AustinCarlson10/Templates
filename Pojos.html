@@ -1,8 +1,8 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Pojo's Family Fun Center</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
@@ -19,8 +19,8 @@
       <div class="lg:hidden">
         <button id="menu-toggle" class="rounded-md p-2 text-gray-200 hover:text-gray-300">
           <span class="sr-only">Open menu</span>
-          <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 6h18M3 12h18m-18 6h18"/>
           </svg>
         </button>
       </div>
@@ -32,18 +32,17 @@
       </nav>
     </div>
     <!-- Mobile Menu -->
-    <div id="mobile-menu" class="hidden lg:hidden bg-indigo-700">
+    <div id="mobile-menu" class="hidden bg-indigo-700">
       <nav class="space-y-2 p-4">
-        <a href="#" class="block text-sm font-medium text-white hover:bg-indigo-600 rounded-md px-4 py-2">Product</a>
-        <a href="#" class="block text-sm font-medium text-white hover:bg-indigo-600 rounded-md px-4 py-2">Features</a>
-        <a href="#" class="block text-sm font-medium text-white hover:bg-indigo-600 rounded-md px-4 py-2">Marketplace</a>
+        <a href="#" class="block text-sm font-medium text-white hover:bg-indigo-600 rounded-md px-4 py-2">Event Selections</a>
+        <a href="#" class="block text-sm font-medium text-white hover:bg-indigo-600 rounded-md px-4 py-2">Attractions</a>
         <a href="#" class="block text-sm font-medium text-white hover:bg-indigo-600 rounded-md px-4 py-2">Company</a>
       </nav>
     </div>
   </header>
 
   <!-- Hero Section -->
-  <section class="relative px-6 pt-20 lg:px-8">
+  <section class="relative px-6 pt-24 lg:pt-32 lg:px-8">
     <div class="mx-auto max-w-2xl text-center">
       <!-- Image -->
       <img class="mx-auto h-48 w-auto" src="https://i.imghippo.com/files/DYKh6988k.png" alt="Main Photo">
@@ -59,27 +58,21 @@
   </section>
 
   <!-- About Section -->
-  <section class="relative isolate -z-10 mt-6">
+  <section class="mt-10">
     <div class="container mx-auto px-6">
-      <div class="flex flex-wrap items-center justify-between py-10">
-        <div class="w-full lg:w-1/2">
-          <h1 class="text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl">About us</h1>
-          <p class="mt-8 text-lg text-gray-500 sm:text-xl">
+      <div class="flex flex-col-reverse lg:flex-row items-center justify-between py-10">
+        <div class="w-full lg:w-1/2 mt-10 lg:mt-0">
+          <h2 class="text-3xl font-bold text-gray-900 sm:text-5xl">About Us</h2>
+          <p class="mt-4 text-gray-600">
             Our goal is to create happy, lifelong memories for every family that visits. Since 1988, Pojo's Family Fun Center has been a cherished destination in Boise, offering a safe and entertaining environment for families to connect and have fun. Built on a foundation of joy and excitement, we are proud to be a community hub where unforgettable memories are made.
           </p>
         </div>
         <!-- Images -->
-        <div class="flex w-full mt-10 lg:w-1/2">
-          <div class="w-1/3">
-            <img src="https://tse1.mm.bing.net/th?id=OIP.h3fCOX6rdYTZ16oI5_5e_AHaE-&pid=Api&adlt=" alt="Image 1" class="rounded-xl object-cover shadow-lg">
-          </div>
-          <div class="w-1/3 mx-4">
-            <img src="https://tse2.mm.bing.net/th?id=OIP.uxGY8sTLGipbKrmJq5hoTAHaFj&pid=Api&adlt=strict" alt="Image 2" class="rounded-xl object-cover shadow-lg">
-            <img src="https://static.wixstatic.com/media/2530f8_c314a135e4074c9b99dcf193d3237a4e~mv2.jpeg/v1/fill/w_434,h_579,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/2530f8_c314a135e4074c9b99dcf193d3237a4e~mv2.jpeg" alt="Image 3" class="mt-4 rounded-xl object-cover shadow-lg">
-          </div>
-          <div class="w-1/3">
-            <img src="https://static.wixstatic.com/media/2530f8_4318e47005ae452ea13b347a3668eb74~mv2.jpg/v1/crop/x_244,y_226,w_2362,h_1365/fill/w_1355,h_780,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG_4059%2520(1)_edited.jpg" alt="Image 4" class="rounded-xl object-cover shadow-lg">
-            <img src="https://tse3.mm.bing.net/th?id=OIP.3rMdeJy5edo4E-6VgcYEKAHaFV&pid=Api&adlt=strict" alt="Image 5" class="mt-4 rounded-xl object-cover shadow-lg">
+        <div class="w-full lg:w-1/2">
+          <div class="grid grid-cols-2 gap-4">
+            <img src="https://tse1.mm.bing.net/th?id=OIP.h3fCOX6rdYTZ16oI5_5e_AHaE-&pid=Api&adlt=" alt="Image 1" class="rounded-xl object-cover shadow-lg w-full h-48">
+            <img src="https://tse2.mm.bing.net/th?id=OIP.uxGY8sTLGipbKrmJq5hoTAHaFj&pid=Api&adlt=strict" alt="Image 2" class="rounded-xl object-cover shadow-lg w-full h-48">
+            <img src="https://static.wixstatic.com/media/2530f8_c314a135e4074c9b99dcf193d3237a4e~mv2.jpeg" alt="Image 3" class="rounded-xl object-cover shadow-lg w-full h-48 col-span-2">
           </div>
         </div>
       </div>
@@ -89,8 +82,8 @@
   <!-- Attractions Section -->
   <section class="mt-12 bg-gray-100 py-12">
     <div class="container mx-auto px-6 text-center">
-      <h2 class="text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">Attractions</h2>
-      <p class="mt-8 text-lg text-gray-700 leading-relaxed">
+      <h2 class="text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">Attractions</h2>
+      <p class="mt-4 text-lg text-gray-700 leading-relaxed">
         Welcome to Pojo's Family Fun Center, where we bring joy, laughter, and excitement to every visit. From thrilling rides to engaging arcade games, there’s something for everyone to enjoy. Gather your loved ones and make unforgettable memories at Pojo's—a place that feels just like home.
       </p>
     </div>
@@ -99,68 +92,67 @@
   <!-- Attractions Grid -->
   <section class="container mx-auto px-6 py-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
     <a href="/carousel" class="group bg-white rounded-lg shadow-lg transition hover:bg-gray-200">
-        <img src="https://static.wixstatic.com/media/2530f8_4318e47005ae452ea13b347a3668eb74~mv2.jpg/v1/crop/x_244,y_226,w_2362,h_1365/fill/w_1355,h_780,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG_4059%2520(1)_edited.jpg" alt="Indoor Carousel" class="w-full h-48 object-cover">
-        <div class="p-4">
-            <h2 class="text-xl font-bold text-gray-800 group-hover:text-gray-700">Indoor Carousel</h2>
-            <p class="text-gray-600 group-hover:text-gray-500 mt-2">As Idaho's only indoor carousel, it features handpicked animals representing local wildlife, such as bobcats and whitetail deer.</p>
-        </div>
+      <img src="https://static.wixstatic.com/media/2530f8_4318e47005ae452ea13b347a3668eb74~mv2.jpg" alt="Indoor Carousel" class="w-full h-48 object-cover">
+      <div class="p-4">
+        <h3 class="text-xl font-bold text-gray-800 group-hover:text-gray-700">Indoor Carousel</h3>
+        <p class="text-gray-600 group-hover:text-gray-500 mt-2">As Idaho's only indoor carousel, it features handpicked animals representing local wildlife, such as bobcats and whitetail deer.</p>
+      </div>
     </a>
     <a href="/bumper-cars" class="group bg-white rounded-lg shadow-lg transition hover:bg-gray-200">
-        <img src="https://th.bing.com/th/id/OIP.0Pm2i1ToSHymZplflnghiwHaEK?w=310&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="Bumper Cars" class="w-full h-48 object-cover">
-        <div class="p-4">
-            <h2 class="text-xl font-bold text-gray-800 group-hover:text-gray-700">Bumper Cars</h2>
-            <p class="text-gray-600 group-hover:text-gray-500 mt-2">Engage in friendly competition with family and friends on the indoor bumper car arena, a popular attraction since 1994.</p>
-        </div>
+      <img src="https://th.bing.com/th/id/OIP.0Pm2i1ToSHymZplflnghiwHaEK?w=310&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="Bumper Cars" class="w-full h-48 object-cover">
+      <div class="p-4">
+        <h3 class="text-xl font-bold text-gray-800 group-hover:text-gray-700">Bumper Cars</h3>
+        <p class="text-gray-600 group-hover:text-gray-500 mt-2">Engage in friendly competition with family and friends on the indoor bumper car arena, a popular attraction since 1994.</p>
+      </div>
     </a>
     <a href="/arcade-games" class="group bg-white rounded-lg shadow-lg transition hover:bg-gray-200">
-        <img src="https://th.bing.com/th/id/R.2f61c6543794631cdd80d1f676ddd35f?rik=TIbXl8kEbxt1aA&pid=ImgRaw&r=0" alt="Arcade Games" class="w-full h-48 object-cover">
-        <div class="p-4">
-            <h2 class="text-xl font-bold text-gray-800 group-hover:text-gray-700">Arcade Games</h2>
-            <p class="text-gray-600 group-hover:text-gray-500 mt-2">The expansive arcade offers a mix of classic and modern games, including driving simulators and redemption games.</p>
-        </div>
+      <img src="https://th.bing.com/th/id/R.2f61c6543794631cdd80d1f676ddd35f?rik=TIbXl8kEbxt1aA&pid=ImgRaw&r=0" alt="Arcade Games" class="w-full h-48 object-cover">
+      <div class="p-4">
+        <h3 class="text-xl font-bold text-gray-800 group-hover:text-gray-700">Arcade Games</h3>
+        <p class="text-gray-600 group-hover:text-gray-500 mt-2">The expansive arcade offers a mix of classic and modern games, including driving simulators and redemption games.</p>
+      </div>
     </a>
     <a href="/soft-play" class="group bg-white rounded-lg shadow-lg transition hover:bg-gray-200">
-        <img src="https://th.bing.com/th/id/OIP.uxGY8sTLGipbKrmJq5hoTAHaFj?rs=1&pid=ImgDetMain" alt="Soft Play Area" class="w-full h-48 object-cover">
-        <div class="p-4">
-            <h2 class="text-xl font-bold text-gray-800 group-hover:text-gray-700">Soft Play Area</h2>
-            <p class="text-gray-600 group-hover:text-gray-500 mt-2">Designed for younger children, this area provides a safe and colorful environment with age-appropriate activities.</p>
-        </div>
+      <img src="https://th.bing.com/th/id/OIP.uxGY8sTLGipbKrmJq5hoTAHaFj?rs=1&pid=ImgDetMain" alt="Soft Play Area" class="w-full h-48 object-cover">
+      <div class="p-4">
+        <h3 class="text-xl font-bold text-gray-800 group-hover:text-gray-700">Soft Play Area</h3>
+        <p class="text-gray-600 group-hover:text-gray-500 mt-2">Designed for younger children, this area provides a safe and colorful environment with age-appropriate activities.</p>
+      </div>
     </a>
     <a href="/carousel-cafe" class="group bg-white rounded-lg shadow-lg transition hover:bg-gray-200">
-        <img src="https://static.wixstatic.com/media/2530f8_6a7d4d83fca94ac6a5d8e8a69634566b.jpg/v1/fill/w_636,h_477,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/2530f8_6a7d4d83fca94ac6a5d8e8a69634566b.jpg" alt="Carousel Café" class="w-full h-48 object-cover">
-        <div class="p-4">
-            <h2 class="text-xl font-bold text-gray-800 group-hover:text-gray-700">Carousel Café</h2>
-            <p class="text-gray-600 group-hover:text-gray-500 mt-2">The on-site café serves a variety of delicious foods. including pizza, burgers, sandwiches, and kid-friendly meals.</p>
-        </div>
+      <img src="https://static.wixstatic.com/media/2530f8_6a7d4d83fca94ac6a5d8e8a69634566b.jpg" alt="Carousel Café" class="w-full h-48 object-cover">
+      <div class="p-4">
+        <h3 class="text-xl font-bold text-gray-800 group-hover:text-gray-700">Carousel Café</h3>
+        <p class="text-gray-600 group-hover:text-gray-500 mt-2">The on-site café serves a variety of delicious foods, including pizza, burgers, sandwiches, and kid-friendly meals.</p>
+      </div>
     </a>
     <a href="/birthday-packages" class="group bg-white rounded-lg shadow-lg transition hover:bg-gray-200">
-        <img src="https://th.bing.com/th/id/R.1de0b3c250945bcb005c806eaebcfc23?rik=kKxsfGXaIp33KA&riu=http%3a%2f%2f2.bp.blogspot.com%2f-aCwnzN4Epk4%2fUZ9IjXGWk9I%2fAAAAAAAAAO0%2fVIaokMoH1uw%2fs1600%2fhappy_birthday_cake_with_candles-1920x1200.jpg&ehk=q6M2dU%2bO6tg1il%2bXzAEq9w2YWHT2erATpPEiF96KtdQ%3d&risl=&pid=ImgRaw&r=0" alt="Birthday Party Packages" class="w-full h-48 object-cover">
-        <div class="p-4">
-            <h2 class="text-xl font-bold text-gray-800 group-hover:text-gray-700">Birthday Party Packages</h2>
-            <p class="text-gray-600 group-hover:text-gray-500 mt-2">Pojo's offers customizable packages for birthdays and other events, including reserved seating, food, and game tokens.</p>
-        </div>
+      <img src="https://th.bing.com/th/id/R.1de0b3c250945bcb005c806eaebcfc23?rik=kKxsfGXaIp33KA&riu=http%3a%2f%2f2.bp.blogspot.com%2f-aCwnzN4Epk4%2fUZ9IjXGWk9I%2fAAAAAAAAAO0%2fVIaokMoH1uw%2fs1600%2fhappy_birthday_cake_with_candles-1920x1200.jpg&ehk=q6M2dU%2bO6tg1il%2bXzAEq9w2YWHT2erATpPEiF96KtdQ%3d&risl=&pid=ImgRaw&r=0" alt="Birthday Party Packages" class="w-full h-48 object-cover">
+      <div class="p-4">
+        <h3 class="text-xl font-bold text-gray-800 group-hover:text-gray-700">Birthday Party Packages</h3>
+        <p class="text-gray-600 group-hover:text-gray-500 mt-2">Pojo's offers customizable packages for birthdays and other events, including reserved seating, food, and game tokens.</p>
+      </div>
     </a>
   </section>
 
   <!-- Blog Section -->
-  <section class="mx-auto mt-32 max-w-7xl px-6 lg:px-8 text-center">
-    <h2 class="text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">From the Blog</h2>
+  <section class="mx-auto mt-16 max-w-7xl px-6 lg:px-8 text-center">
+    <h2 class="text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">From the Blog</h2>
     <p class="mt-2 text-lg text-gray-600">Learn how to grow your business with our expert advice.</p>
   </section>
 
   <!-- Blog Posts Grid -->
-  <div class="container mx-auto py-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-6">
-
+  <section class="container mx-auto py-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-6">
     <!-- Blog Post 1 -->
-    <article class="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl bg-gray-900 px-8 pb-8 pt-80 lg:col-span-1">
-      <img src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80" alt="" class="absolute inset-0 -z-10 w-full h-full object-cover">
+    <article class="relative flex flex-col justify-end overflow-hidden rounded-2xl bg-gray-900 px-8 pb-8 pt-80">
+      <img src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36" alt="" class="absolute inset-0 -z-10 w-full h-full object-cover">
       <div class="absolute inset-0 -z-10 bg-gradient-to-t from-gray-900 via-gray-900/40"></div>
       <div class="absolute inset-0 -z-10 rounded-2xl ring-1 ring-inset ring-gray-900"></div>
       <div class="flex items-center gap-x-2 text-gray-300">
         <time datetime="2020-03-16" class="text-sm">Mar 16, 2020</time>
         <span class="text-sm">|</span>
         <div class="flex items-center gap-x-2">
-          <img src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&fm=jpg&crop=face&fit=facearea&facepad=2&band-cut-out=doubt05&exp=good_1.incobra.doubt05.um.min(vga)" alt="Michael Foster" class="w-6 h-6 rounded-full bg-white/10">
+          <img src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5" alt="Michael Foster" class="w-6 h-6 rounded-full bg-white/10">
           Michael Foster
         </div>
       </div>
@@ -170,43 +162,44 @@
         </a>
       </h3>
     </article>
+    <!-- Add more blog posts here if desired -->
+  </section>
 
-  </div>
- 
   <!-- Party Packages Section -->
   <section class="container mx-auto px-6 py-12">
-    <h1 class="text-4xl font-bold mb-4 text-center">POJOS Party Packages</h1>
-    <p class="mb-4">
-        POJOS offers a variety of party packages to make every occasion unforgettable! 🎉 
+    <h2 class="text-3xl font-bold mb-4 text-center">POJO'S Party Packages</h2>
+    <p class="mb-4 text-gray-700">
+      POJO'S offers a variety of party packages to make every occasion unforgettable! 🎉 
     </p>
-    <p class="mb-4">
-        💰 Don’t forget to check out our web coupons for exciting deals on food, games, and more fun!
+    <p class="mb-4 text-gray-700">
+      💰 Don’t forget to check out our web coupons for exciting deals on food, games, and more fun!
     </p>
-    <p class="mb-4">
-        🚨 Important Notice: Reservations are first-come, first-served. Please see the available party times below:
+    <p class="mb-4 text-gray-700">
+      🚨 Important Notice: Reservations are first-come, first-served. Please see the available party times below:
     </p>
-    <ul class="list-disc list-inside mb-4">
-        <li>Saturday, December 14th: Limited availability at 7 PM only.</li>
-        <li>Sunday, December 15th: Open slots at 3 PM, 5 PM, and 6 PM.</li>
+    <ul class="list-disc list-inside mb-4 text-gray-700">
+      <li>Saturday, December 14th: Limited availability at 7 PM only.</li>
+      <li>Sunday, December 15th: Open slots at 3 PM, 5 PM, and 6 PM.</li>
     </ul>
-    <p class="mb-4">
-        🎊 Planning a weekend party? We also have reservations available on Fridays and Sundays to suit your schedule.
+    <p class="mb-4 text-gray-700">
+      🎊 Planning a weekend party? We also have reservations available on Fridays and Sundays to suit your schedule.
     </p>
-    <p class="mb-6">
-        Let POJOS make your next party fabulous and hassle-free!
+    <p class="mb-6 text-gray-700">
+      Let POJO'S make your next party fabulous and hassle-free!
     </p>
     <!-- Explore Options Button -->
     <div class="flex justify-center">
-        <a href="#" class="bg-indigo-600 text-white py-2 px-4 rounded hover:bg-indigo-700 transition duration-300">
-            Explore Options
-        </a>
+      <a href="#" class="bg-indigo-600 text-white py-2 px-6 rounded hover:bg-indigo-700 transition duration-300">
+        Explore Options
+      </a>
     </div>
   </section>
 
 <!-- Footer -->
-<footer class="relative mt-0 bg-indigo-600 text-white">
-  <div class="mx-auto max-w-7xl overflow-hidden px-6 py-20 sm:py-24 lg:px-8">
-    <nav class="-mb-6 flex flex-wrap justify-center gap-x-12 gap-y-3 text-sm/6" aria-label="Footer">
+<footer class="relative bg-indigo-600 text-white">
+  <div class="mx-auto max-w-7xl px-6 py-16 sm:py-20 lg:px-8">
+    <!-- Footer navigation -->
+    <nav class="flex flex-wrap justify-center gap-x-6 gap-y-3 text-sm" aria-label="Footer">
       <a href="#" class="text-gray-200 hover:text-gray-50">About</a>
       <a href="#" class="text-gray-200 hover:text-gray-50">Blog</a>
       <a href="#" class="text-gray-200 hover:text-gray-50">Jobs</a>
@@ -214,23 +207,27 @@
       <a href="#" class="text-gray-200 hover:text-gray-50">Accessibility</a>
       <a href="#" class="text-gray-200 hover:text-gray-50">Partners</a>
     </nav>
-    <div class="mt-16 flex justify-center gap-x-10">
+    <!-- Social media icons -->
+    <div class="mt-10 flex justify-center gap-x-10">
+      <!-- Facebook Icon -->
       <a href="#" class="text-gray-200 hover:text-gray-50">
         <span class="sr-only">Facebook</span>
-        <svg class="size-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-          <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" />
+        <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54v-2.89h2.54V9.797c0-2.507 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.631.771-1.631 1.562V12h2.774l-.444 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/>
         </svg>
       </a>
+      <!-- Instagram Icon -->
       <a href="#" class="text-gray-200 hover:text-gray-50">
         <span class="sr-only">Instagram</span>
-        <svg class="size-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-          <path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd" />
+        <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M7.75 2h8.5A5.75 5.75 0 0122 7.75v8.5A5.75 5.75 0 0116.25 22h-8.5A5.75 5.75 0 012 16.25v-8.5A5.75 5.75 0 017.75 2zm0 1.5A4.25 4.25 0 003.5 7.75v8.5a4.25 4.25 0 004.25 4.25h8.5a4.25 4.25 0 004.25-4.25v-8.5a4.25 4.25 0 00-4.25-4.25h-8.5zM12 7a5 5 0 110 10 5 5 0 010-10zm0 1.5a3.5 3.5 0 100 7 3.5 3.5 0 000-7zm5-2.75a1.25 1.25 0 112.5 0 1.25 1.25 0 01-2.5 0z"/>
         </svg>
       </a>
     </div>
-    <p class="mt-10 text-center text-sm/6 text-gray-200">&copy; 2024 Pojo's, Inc. All rights reserved.</p>
+    <p class="mt-10 text-center text-sm text-gray-200">&copy; 2024 Pojo's, Inc. All rights reserved.</p>
   </div>
-  <div class="absolute bottom-0 left-0 w-auto h-full">
-    <img src="https://i.imghippo.com/files/UlPs4320rwc.png" alt="Footer Image" class="h-full object-contain">
+  <!-- Footer Image -->
+  <div class="absolute bottom-0 left-0 mb-4 ml-4">
+    <img src="https://i.imghippo.com/files/UlPs4320rwc.png" alt="Footer Image" class="object-contain w-24 sm:w-32 md:w-48 lg:w-90 h-auto">
   </div>
 </footer>
