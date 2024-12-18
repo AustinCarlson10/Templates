@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pojo's Family Fun Center</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const menuToggle = document.getElementById('menu-toggle');
+      const mobileMenu = document.getElementById('mobile-menu');
+
+      menuToggle.addEventListener('click', function() {
+        mobileMenu.classList.toggle('hidden');
+      });
+    });
+  </script>
+</head>
+<body class="bg-white">
+
+  <!-- Header Section -->
+  <header class="fixed top-0 inset-x-0 z-50 bg-indigo-600 text-white">
+    <div class="container mx-auto flex items-center justify-between p-4">
+      <!-- Logo -->
+      <a href="#" class="flex items-center">
+        <img class="h-10 w-auto" src="https://i.imghippo.com/files/fatL8493QnE.png" alt="Logo">
+      </a>
+      <!-- Hamburger Menu for Mobile -->
+      <div class="lg:hidden">
+        <button id="menu-toggle" class="rounded-md p-2 text-gray-200 hover:text-gray-300">
+          <span class="sr-only">Open menu</span>
+          <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 6h18M3 12h18m-18 6h18"/>
+          </svg>
+        </button>
+      </div>
+      <!-- Navigation Links (Hidden on Mobile) -->
+      <nav class="hidden lg:flex space-x-8">
+        <a href="#party-packages" class="text-sm font-medium hover:text-gray-200">Event Selections</a>
+        <a href="#attractions" class="text-sm font-medium hover:text-gray-200">Attractions</a>
+        <a href="#about-us" class="text-sm font-medium hover:text-gray-200">Company</a>
+      </nav>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden bg-indigo-700">
+      <nav class="space-y-2 p-4">
+        <a href="#party-packages" class="block text-sm font-medium text-white hover:bg-indigo-600 rounded-md px-4 py-2">Event Selections</a>
+        <a href="#attractions" class="block text-sm font-medium text-white hover:bg-indigo-600 rounded-md px-4 py-2">Attractions</a>
+        <a href="#about-us" class="block text-sm font-medium text-white hover:bg-indigo-600 rounded-md px-4 py-2">Company</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative px-6 pt-24 lg:pt-32 lg:px-8">
+    <div class="mx-auto max-w-2xl text-center">
+      <!-- Image -->
+      <img class="mx-auto h-48 w-auto" src="https://i.imghippo.com/files/DYKh6988k.png" alt="Main Photo">
+      <!-- Heading -->
+      <h1 class="mt-6 text-3xl font-bold text-gray-900 sm:text-5xl">Family Owned Est. 1974</h1>
+      <!-- Button -->
+      <div class="mt-6">
+        <a href="#attractions" class="rounded-md bg-indigo-600 px-6 py-3 text-lg font-semibold text-white hover:bg-indigo-700">
+          Our Attractions
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about-us" class="mt-10">
+    <div class="container mx-auto px-6">
+      <div class="flex flex-col-reverse lg:flex-row items-center justify-between py-10">
+        <div class="w-full lg:w-1/2 mt-10 lg:mt-0">
+          <h2 class="text-3xl font-bold text-gray-900 sm:text-5xl">About Us</h2>
+          <p class="mt-4 text-gray-600">
+            Our goal is to create happy, lifelong memories for every family that visits. Since 1988, Pojo's Family Fun Center has been a cherished destination in Boise, offering a safe and entertaining environment for families to connect and have fun.
+          </p>
+        </div>
+        <!-- Images -->
+        <div class="w-full lg:w-1/2">
+          <div class="grid grid-cols-2 gap-4">
+            <img src="https://tse1.mm.bing.net/th?id=OIP.h3fCOX6rdYTZ16oI5_5e_AHaE-&pid=Api&adlt=" alt="Image 1" class="rounded-xl object-cover shadow-lg w-full h-48">
+            <img src="https://tse2.mm.bing.net/th?id=OIP.uxGY8sTLGipbKrmJq5hoTAHaFj&pid=Api&adlt=strict" alt="Image 2" class="rounded-xl object-cover shadow-lg w-full h-48">
+            <img src="https://static.wixstatic.com/media/2530f8_c314a135e4074c9b99dcf193d3237a4e~mv2.jpeg" alt="Image 3" class="rounded-xl object-cover shadow-lg w-full h-48 col-span-2">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Attractions Section -->
+  <section id="attractions" class="mt-12 py-12 bg-gray-100">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">Attractions</h2>
+      <p class="mt-4 text-lg text-gray-700 leading-relaxed">
+        Welcome to Pojo's Family Fun Center, where we bring joy, laughter, and excitement to every visit.
+      </p>
+    </div>
+  </section>
+
+  <!-- Party Packages Section -->
+  <section id="party-packages" class="container mx-auto px-6 py-12">
+    <h2 class="text-3xl font-bold mb-4 text-center">POJO'S Party Packages</h2>
+    <p class="mb-4 text-gray-700">
+      POJO'S offers a variety of party packages to make every occasion unforgettable! 🎉 
+    </p>
+    <p class="mb-4 text-gray-700">
+      💰 Don’t forget to check out our web coupons for exciting deals on food, games, and more fun!
+    </p>
+    <p class="mb-4 text-gray-700">
+      🚨 Important Notice: Reservations are first-come, first-served. Please see the available party times below:
+    </p>
+    <ul class="list-disc list-inside mb-4 text-gray-700">
+      <li>Saturday, December 14th: Limited availability at 7 PM only.</li>
+      <li>Sunday, December 15th: Open slots at 3 PM, 5 PM, and 6 PM.</li>
+    </ul>
+    <p class="mb-4 text-gray-700">
+      🎊 Planning a weekend party? We also have reservations available on Fridays and Sundays to suit your schedule.
+    </p>
+    <p class="mb-6 text-gray-700">
+      Let POJO'S make your next party fabulous and hassle-free!
+    </p>
+    <!-- Explore Options Button -->
+    <div class="flex justify-center">
+      <a href="#" class="bg-indigo-600 text-white py-2 px-6 rounded hover:bg-indigo-700 transition duration-300">
+        Explore Options
+      </a>
+    </div>
+  </section>
+
+<div class="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32">
+  <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=focalpoint&fp-y=.8&w=2830&h=1500&q=80&blend=111827&sat=-100&exp=15&blend-mode=multiply" alt="" class="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center">
+  <div class="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl">
+    <div class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#ff4694] to-[#776fff] opacity-20" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+  </div>
+  <div class="absolute -top-52 left-1/2 -z-10 -translate-x-1/2 transform-gpu blur-3xl sm:top-[-28rem] sm:ml-16 sm:translate-x-0 sm:transform-gpu">
+    <div class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#ff4694] to-[#776fff] opacity-20" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+  </div>
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto max-w-2xl lg:mx-0">
+      <h2 class="text-5xl font-semibold tracking-tight text-white sm:text-7xl">Our Hours</h2>
+      <p class="mt-8 text-lg font-medium text-gray-400 sm:text-xl/8">
+        Find all the essential information about our game hours, cafe hours, and holiday hours below.
+      </p>
+    </div>
+    <div class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-6 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-8">
+      <!-- Game Hours -->
+      <div class="flex flex-col gap-y-2 rounded-xl bg-white/5 p-6 ring-1 ring-inset ring-white/10">
+        <h3 class="font-semibold text-white text-lg">Game Hours</h3>
+        <p class="text-gray-300">Monday-Thursday: 11am-10pm</p>
+        <p class="text-gray-300">Friday-Saturday: 11am-11pm</p>
+        <p class="text-gray-300">Sunday: Noon-10pm</p>
+      </div>
+      <!-- Cafe Hours -->
+      <div class="flex flex-col gap-y-2 rounded-xl bg-white/5 p-6 ring-1 ring-inset ring-white/10">
+        <h3 class="font-semibold text-white text-lg">Cafe Hours</h3>
+        <p class="text-gray-300">Monday-Thursday: 11am-8pm</p>
+        <p class="text-gray-300">Friday & Saturday: 11am-9pm</p>
+        <p class="text-gray-300">Sunday: Noon-8pm</p>
+      </div>
+      <!-- Holiday Hours -->
+      <div class="flex flex-col gap-y-2 rounded-xl bg-white/5 p-6 ring-1 ring-inset ring-white/10">
+        <h3 class="font-semibold text-white text-lg">Holiday Hours</h3>
+        <p class="text-gray-300">Thanksgiving: CLOSED</p>
+        <p class="text-gray-300">Black Friday: 11am-11pm</p>
+        <p class="text-gray-300">Christmas Eve: CLOSED</p>
+        <p class="text-gray-300">Christmas Day: CLOSED</p>
+        <p class="text-gray-300">New Year's Eve: Noon-10pm</p>
+        <p class="text-gray-300">New Year's Day: 11am-10pm</p>
+        <p class="text-gray-300">Easter: CLOSED</p>
+        <p class="text-gray-300">4th of July: 12pm-8pm</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="relative bg-white py-24 sm:py-32">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="text-center">
+      <h2 class="text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl">Gift Cards</h2>
+      <p class="mt-8 text-lg font-medium text-gray-700 sm:text-xl/8">
+        Give the gift of fun and memories! Perfect for birthdays, holidays, or any special occasion, our gift cards make the ideal present for your loved ones.
+      </p>
+    </div>
+    <div class="mt-16 flex justify-center">
+      <a href="https://www.clover.com/online-ordering/pojos-family-fun-center-boise" class="rounded-md bg-indigo-600 px-6 py-3 text-lg font-semibold text-white shadow-lg hover:bg-indigo-700 transition duration-300">
+        Purchase Gift Cards
+      </a>
+    </div>
+  </div>
+</div>
+
+
+<!-- Footer -->
+<footer class="relative bg-indigo-600 text-white">
+  <div class="mx-auto max-w-7xl px-6 py-16 sm:py-20 lg:px-8">
+    <!-- Footer navigation -->
+    <nav class="flex flex-wrap justify-center gap-x-6 gap-y-3 text-sm" aria-label="Footer">
+      <a href="#" class="text-gray-200 hover:text-gray-50">About</a>
+      <a href="#" class="text-gray-200 hover:text-gray-50">Blog</a>
+      <a href="#" class="text-gray-200 hover:text-gray-50">Jobs</a>
+      <a href="#" class="text-gray-200 hover:text-gray-50">Press</a>
+      <a href="#" class="text-gray-200 hover:text-gray-50">Accessibility</a>
+      <a href="#" class="text-gray-200 hover:text-gray-50">Partners</a>
+    </nav>
+
+
+
+      </a>
+    </div>
+  </div>
+</div>
+
+    <!-- Social media icons -->
+    <div class="mt-10 flex justify-center gap-x-6">
+      <!-- Facebook Icon -->
+      <a href="#" class="text-gray-200 hover:text-gray-50">
+        <span class="sr-only">Facebook</span>
+        <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M22 12c0-5.522-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.129 8.438 9.879v-6.99h-2.54v-2.89h2.54V9.8c0-2.508 1.49-3.89 3.777-3.89 1.093 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.631.772-1.631 1.563V12h2.774l-.444 2.89h-2.33v6.989C18.343 21.129 22 17 22 12z" />
+        </svg>
+      </a>
+      <!-- Instagram Icon -->
+      <a href="#" class="text-gray-200 hover:text-gray-50">
+        <span class="sr-only">Instagram</span>
+        <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M7.75 2h8.5A5.75 5.75 0 0122 7.75v8.5A5.75 5.75 0 0116.25 22h-8.5A5.75 5.75 0 012 16.25v-8.5A5.75 5.75 0 017.75 2zm0 1.5A4.25 4.25 0 003.5 7.75v8.5a4.25 4.25 0 004.25 4.25h8.5a4.25 4.25 0 004.25-4.25v-8.5a4.25 4.25 0 00-4.25-4.25h-8.5zM12 7a5 5 0 110 10 5 5 0 010-10zm0 1.5a3.5 3.5 0 100 7 3.5 3.5 0 000-7zm5-2.75a1.25 1.25 0 112.5 0 1.25 1.25 0 01-2.5 0z" />
+        </svg>
+      </a>
+    </div>
+
+    <!-- Footer Content -->
+    <div class="mt-10 text-center text-sm text-gray-200">
+      <!-- Business Name -->
+      <p class="font-semibold">&copy; 2024 POJO'S Family Fun Center</p>
+      <!-- Address -->
+      <div class="mt-2 space-y-1">
+        <p>7736 W. Fairview Avenue</p>
+        <p>Boise, ID 83704</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Image -->
+  <div class="absolute left-0 bottom-[50px] sm:bottom-0 mb-4 ml-4">
+    <img src="https://i.imghippo.com/files/UlPs4320rwc.png" alt="Footer Image" class="object-contain w-24 h-auto sm:w-32 md:w-40 lg:w-48">
+  </div>
+</footer>
